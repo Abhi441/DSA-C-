@@ -1,0 +1,19 @@
+public class Solution {
+    public int MaxProfit(int[] prices) {
+        int maxprofit = 0;
+        int bye = prices[0];
+
+        for(int i  = 0 ; i < prices.Length ; i++){
+              
+              if(prices[i] < bye){
+                 bye = prices[i] ;
+              }
+              int sell = prices[i];
+             int currprofit = sell - bye;
+              if(currprofit > maxprofit){
+                  maxprofit = currprofit;
+              }
+        }
+        return maxprofit;
+    }
+}
