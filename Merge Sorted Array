@@ -1,0 +1,22 @@
+public class Solution {
+    public void Merge(int[] nums1, int m, int[] nums2, int n) {
+        int tall1 = m - 1, tall2 = n - 1, end = m + n - 1;
+        while(tall1 >= 0  && tall2 >= 0){
+            if(nums1[tall1] >= nums2[tall2]){
+                nums1[end] = nums1[tall1];
+                tall1--;
+            }
+            else{
+                nums1[end] = nums2[tall2];
+                tall2--;
+            }
+            end--;
+        }
+        while(tall2 >= 0)
+        {
+            nums1[end] = nums2[tall2];
+            tall2--;
+            end--;
+        }
+    }
+}
