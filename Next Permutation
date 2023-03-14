@@ -1,0 +1,39 @@
+public class Solution {
+    public void NextPermutation(int[] nums) {
+        
+         int k = nums.Length - 2;
+        while(k >= 0 && nums[k] >= nums[k + 1])
+        {
+            k--;
+        }
+        if(k == -1){
+        reverse(0,nums.Length - 1, nums);
+        return;
+        }
+        //
+        for(int i = nums.Length - 1 ; i > k ; i--){
+            if(nums[i] > nums[k])
+            {
+                int temp = nums[k];
+                nums[k] = nums[i];
+                 nums[i] = temp;
+                 break;
+            }
+        }
+        reverse(k + 1,nums.Length - 1, nums);
+
+        
+    }
+     public void reverse(int i , int j ,int[] nums)
+        {
+             while(i < j)
+             {
+                int temp = nums[i];
+                nums[i] = nums[j];
+                 nums[j] = temp;
+                 i++;
+                 j--;
+             }
+        }
+    
+}
