@@ -1,0 +1,42 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld{
+	static public void Main (){
+		string str = Console.ReadLine();
+		bool ch = Check(str);
+		if(ch == true)
+		Console.Write("Duplicate");
+		else
+		Console.Write("Not Duplicate");
+	}
+	public static bool Check(string str)
+	{
+	    if(str.Length > 256)
+	    {
+	        return false;
+	    }
+	    bool[] arr = new bool[256];
+	    for(int  i = 0 ; i < 256 ; i++)
+	    {
+	        arr[i] =  false;
+	    }
+	     for(int i = 0 ; i < str.Length ; i++)
+	     {
+	         int value =  (int)str[i];
+	         
+	         if( arr[value] == true)
+	         {
+	             return true;
+	             
+	         }
+	         
+	         arr[value] = true;
+	         
+	         
+	     }
+	     return false;
+	}
+}
