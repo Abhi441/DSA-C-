@@ -38,3 +38,65 @@ Palindrome
 https://www.youtube.com/watch?v=z0_Rcl6yBpQ.
 https://www.youtube.com/watch?v=kbvt6Ikk8no.
 https://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/.
+
+
+
+
+
+
+/////////////////////////////////////////////How to Solvethe problem in DSA in INTERVIEW
+1> Understand the Problem: Read the problem statement carefully and ensure you fully understand the requirements,
+input, and expected output. Identify any edge cases or 
+constraints that need to be considered.
+2> Plan and Design: Before diving into code, take some time to plan and design your solution. Think about the data structures
+and algorithms that might be relevant to solve the problem efficiently. Break down the problem into smaller sub-problems if needed.
+3> Choose Appropriate Data Structures and Algorithms: Based on your analysis in the previous step, choose the most appropriate
+data structures and algorithms to solve the problem efficiently. 
+Consider the time and space complexity of your chosen approach.
+4> Implement the Solution: Start implementing your solution in your chosen programming language. Write clean, 
+modular, and readable code. Handle edge cases and validate inputs as necessary. 
+Test your code as you go, either through unit tests or by manually running sample inputs and verifying outputs.
+5>Test and Debug: Once you've implemented your solution, thoroughly test it with various inputs, including normal cases, edge cases, and boundary cases. 
+Verify that the outputs are as expected. If you encounter any issues, use debugging techniques to identify and fix the problems.
+6>Analyze Time and Space Complexity: Analyze the time and space complexity of your solution. 
+Understand the efficiency of your algorithm and identify any potential optimizations.
+7>Discuss and Explain: During the interview, be prepared to explain your thought process, the reasoning behind your solution, and the complexity analysis. Communicate clearly and concisely,
+focusing on the key points that demonstrate your problem-solving abilities.
+
+8>Practice, Practice, Practice: The more practice you have with DSA problems, the more comfortable and confident you'll become. 
+Solve a variety of problems from different sources, such as coding challenge websites, algorithm books, or interview preparation platforms. 
+Analyze the solutions of others and learn from them.
+
+
+
+
+
+
+//////////////////////////////////////////Identify any edge cases MEANS
+When it comes to identifying edge cases, it means considering input scenarios that might be at the boundaries or extremes of the problem constraints.
+Edge cases often involve input values or conditions that are less common or 
+may lead to unique behavior in your solution. By considering edge cases, you can ensure that your solution handles all possible scenarios correctly.
+
+Here are some examples of edge cases to consider:
+
+Minimum and Maximum Values: Test your solution with the minimum and maximum allowed values for the input parameters. This is particularly relevant 
+when dealing with numeric inputs or constraints.
+
+Empty Inputs: Consider cases where input data structures, such as arrays or strings, are empty. How does your solution handle these scenarios? Does
+it produce the expected output or does it require special handling?
+
+Boundary Conditions: Think about situations where the input is just at the boundary of a specific constraint. For example, if a problem states that an array 
+must have at least two elements, test your solution with arrays of length 1 and 2 to see how it behaves in those cases.
+
+Invalid Inputs: Determine how your solution handles invalid or unexpected inputs. For example, if the problem states that a positive integer should be provided, 
+test it with negative numbers, zero, or non-numeric values. Ensure that your solution handles such cases gracefully and provides appropriate error handling if required.
+
+Special Values: Consider any special values that may have specific behavior or edge cases associated with them. For instance, when dealing with dates, leap years or 
+leap seconds may require special handling.
+
+Performance Constraints: If the problem statement includes constraints related to time or space complexity, consider testing your solution with inputs that approach 
+or exceed those limits. This will help ensure that your solution performs efficiently within the given constraints.
+
+By identifying and testing these edge cases, you can uncover any potential issues or unexpected behavior in your solution and make necessary adjustments
+to handle them 
+correctly. It demonstrates thoroughness and attention to detail in your problem-solving approach.
