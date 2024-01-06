@@ -1,0 +1,32 @@
+public class Main
+{
+    static int Solve(string s)
+    {
+        Dictionary<char, int> mpp = new Dictionary<char, int>();
+
+        int left = 0, right = 0;
+        int n = s.Length;
+        int len = 0;
+
+        while (right < n)
+        {
+            if (mpp.ContainsKey(s[right]))
+            {
+                left = Math.Max(mpp[s[right]] + 1, left);
+            }
+
+            mpp[s[right]] = right;
+
+            len = Math.Max(len, right - left + 1);
+            right++;
+        }
+
+        return len;
+    }
+
+    public static void Main(string[] args)
+    {
+        string str = "takeUforward";
+        Console.WriteLine("The length of the longest substring without repeating characters is " + Solve(str));
+    }
+}
